@@ -46,7 +46,7 @@ def xuehao(zjh,mm):#爬取信息
             f.append(q)
     return '\n'.join(f)
 
-chengji=xuehao(1341310220,'BYPQQI')
+chengji=xuehao(####,'###')
 def send():#发送邮件
     def _format_addr(s):#转换编码
         name, addr = parseaddr(s)
@@ -54,9 +54,9 @@ def send():#发送邮件
             Header(name, 'utf-8').encode(),
             addr.encode('utf-8') if isinstance(addr, unicode) else addr))
 
-    from_addr = '845437607@qq.com'
-    password = 'bcjtnbzlhfalbbhf'
-    to_addr = ['459551804@qq.com']
+    from_addr = '####'
+    password = '####'
+    to_addr = ['####']
     smtp_server = 'smtp.qq.com'
     smtp_port = 587
 
